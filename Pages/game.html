@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/game.css">
+    <title>Kitten Playtime</title>
+</head>
+
+<body>
+    <div class="game-main">
+        <!-- <audio controls autoplay loop>
+            <source src="../assets/sound.wav" type="audio/wav">
+        </audio> -->
+        <div>
+            <img class="logoimg" src="../Assets/logo.png">
+        </div>
+        <div class="rating">
+            <img class="trophyimg" src="../Assets/trophy.svg">
+            <img class="starimg" src="../Assets/blackstar.png">
+            <img class="starimg" src="../Assets/blackstar.png">
+            <img class="starimg" src="../Assets/blackstar.png">
+            <img class="starimg" src="../Assets/blackstar.png">
+            <img class="starimg" src="../Assets/blackstar.png">
+            <input class="ratinginput" readonly max="5" type="text" value="0">
+        </div>
+        <div class="volume">
+            <img class="volume-img" src="../Assets/volume.svg">
+        </div>
+        <div class="logout">
+            <img class="logout-img" src="../Assets/logout.svg">
+        </div>
+        <div class="kittens">
+            <div class="carpetkittens">
+                <img class="carpetimg" src="../Assets/carpet.svg" alt="carpet">
+                <img class="cat1" src="../Assets/kitten.svg">
+                <img class="cat2" src="../Assets/kitten.svg">
+                <img class="cat3" src="../Assets/kitten.svg">
+                <img class="cat4" src="../Assets/kitten.svg">
+            </div>
+            <div class="text-kittens">
+                <div class="helper-text">
+                    <div>Four Kittens are Playing.</div>
+                    <div>Four more kittens join in.</div>
+                    <div>How many kittens are there altogether now?</div>
+                </div>
+                <div class="black_kittens">
+                    <img class="bcat1" src="../Assets/kitten-1.svg">
+                    <img class="bcat2" src="../Assets/kitten-1.svg">
+                    <img class="bcat3" src="../Assets/kitten-1.svg">
+                    <img class="bcat4" src="../Assets/kitten-1.svg">
+                </div>
+            </div>
+            <div class="star_div" id="outputtext"></div>
+        </div>
+        <form class="catcount" name="val">
+            <div class="btninput">
+                <span class="btn">0</span>
+                <span class="btn">1</span>
+                <span class="btn">2</span>
+                <span class="btn">3</span>
+                <span class="btn">4</span>
+                <span class="btn">5</span>
+                <span class="btn">6</span>
+                <span class="btn">7</span>
+                <span class="btn">8</span>
+                <span class="btn">9</span>
+            </div>
+            <input class="catcountanswer" id="userInput" type="text" name="txt" readonly="">
+            <button class="enter" id="btn">Enter</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

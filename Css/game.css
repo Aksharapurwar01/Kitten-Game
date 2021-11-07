@@ -1,0 +1,369 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.game-main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Assets/room3.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.logoimg {
+    width: 10%;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+.rating {
+    width: 34%;
+    height: 8%;
+    position: fixed;
+    left: 25rem;
+    top: 2.5rem;
+    border: 3px solid #000;
+    background-color: #f31eb3;
+    border-radius: 50px;
+}
+.trophyimg {
+    width: 3.5vw;
+    position: relative;
+    margin-left: 1%;
+    top: 0.2rem;
+    transform:
+        rotateZ(-40deg);  
+}
+.starimg {
+    width: 3vw;
+    position: relative;
+    justify-content: center;
+    margin-left: 1rem;
+    transform:
+        rotateZ(18deg);
+}
+
+.ratinginput {
+    position: relative;
+    top:-0.5rem;
+    margin-left: 1rem;
+    width: 5.5vw;
+    height: 5vh;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+input {
+    outline: none;
+    font-size: 1.9rem;
+}
+audio {
+    width: 0;
+    height: 0;
+}
+.volume, .logout {
+    width: 3vw;
+    height: 6vh;
+    position: fixed;
+    right: 19rem;
+    top: 3rem;
+    border: 3px solid #000;
+    background-color: #f31eb3;
+    border-radius: 20px;
+}
+.volume-img, .logout-img {
+    width: 1.5vw;
+    position: relative;
+    left: 0.6rem;
+    top: 0.6rem;
+}
+.logout {
+    right: 5rem;
+}
+.carpetimg {
+    position: absolute;
+    z-index: 0;
+    margin-left: 25%;
+    margin-top: -5%;
+    height: 110vh;
+    transform:
+        rotateX(70deg)
+        rotateZ(180deg);
+    transform-style: preserve-3d;
+}
+.cat1, .cat2, .cat3, .cat4 {
+    width: 6%;
+    position: fixed;
+    margin-left: 1%;
+    top: 15.5rem;   
+}
+.cat1{
+    animation-name: catmove1;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes catmove1{
+    from {
+        left: 35rem;
+    }
+
+    to {
+        left: 33rem;
+    }    
+}
+
+.cat2 {
+    left: 29.8rem;
+    top: 19.8rem;
+    animation-name: catmove2;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes catmove2{
+    from {
+        left: 29.8rem;
+    }
+
+    to {
+        left: 27.8rem;
+    }   
+}
+.cat3 {
+    left: 38rem;
+    top: 21rem;
+    animation-name: catmove3;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;  
+}
+@keyframes catmove3{
+    from {
+        left: 38rem;
+    }
+
+    to {
+        left: 36rem;
+    }   
+}
+.cat4 {
+    left: 32rem;
+    top: 25rem;
+    animation-name: catmove4;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes catmove4{
+    from {
+        left: 32rem;
+    }
+
+    to {
+        left: 30rem;
+    }    
+}
+.helper-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: fixed;
+    right: 33rem;
+    top: 8rem;
+}
+.text-kittens {
+    position: relative;
+    animation-name: movetext_bcat;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-out;
+}
+@keyframes movetext_bcat{
+    from {
+        top: -8.9rem;
+        transform: translateX(575px)
+    }
+    to {
+        top: -8.9rem;
+        transform: translateX(10px);
+    }
+}
+.bcat1, .bcat2, .bcat3, .bcat4 {
+    width: 6%;
+    position: fixed;
+    right: 33rem;
+    top: 15.5rem;
+}
+.bcat1 {
+    animation-name: bcatmove1;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bcatmove1{
+    from {
+        right: 33rem;
+    }
+
+    to {
+        right: 35rem;
+    }    
+}
+.bcat2 {
+    right: 27.8rem;
+    top: 19.8rem;
+    animation-name: bcatmove2;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bcatmove2{
+    from {
+        right: 27.8rem;
+    }
+
+    to {
+        right: 29.8rem;
+    }    
+}
+.bcat3 {
+    right: 36rem;
+    top: 21rem;
+    animation-name: bcatmove3;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bcatmove3{
+    from {
+        right: 36rem;
+    }
+
+    to {
+        right: 38rem;
+    }    
+}
+.bcat4 {
+    right: 30rem;
+    top: 25rem;
+    animation-name: bcatmove4;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bcatmove4{
+    from {
+        right: 30rem;
+    }
+
+    to {
+        right: 32rem;
+    }    
+}
+
+.catcount {
+    width: 30vw;
+    height: 15vh;
+    position: fixed;
+    left: 33rem;
+    top: 31rem;
+    border: 3px solid #000;
+    background-color: #f31eb3;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.btninput {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.4rem;
+    text-align: center;
+    width: 30%;
+    margin-left: 1.5rem;
+}
+.btninput span{
+    background-color: maroon;
+    border: 1px solid lightgrey;
+    border-radius: 18px;
+    width: 2vw;
+    height: 4vh;
+    font-size: 1.25rem;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+.btn_input span:hover {
+    background-color: #ff4800;
+}
+.catcountanswer{
+    background-color: #fff;
+    height: 6.2vh;
+    width: 5.5vw;
+    font-size: 1.5rem;
+    border: 2px solid #000;
+    color: #000;
+    text-align: center;
+    border-radius: 8px;
+    margin: 1.5rem 1rem 0rem 1.5rem;
+}
+
+.enter {
+    background-color: #006400;
+    height: 6.5vh;
+    width: 5.6vw;
+    font-size: 1.5rem;
+    border: 2px solid maroon;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1.6rem;
+}
+.enter:hover {
+    background-color: #ff9100;
+}
+
+.win, .loose {
+    width: 12%;
+    position: fixed;
+    left: 40rem;
+    top: 19rem;
+    animation-name: move;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes move {
+    0% {
+        transform: rotate(-25deg);
+    }
+     
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(25deg);
+    }
+}
+.win_text, .loose_text {
+    text-align: center;
+    position: relative;
+    left: 43rem;
+    top: 11.5rem;
+    font-size: 2rem;
+    color: #006400;
+    width: 5%;
+    animation-name: move;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.loose_text {
+    width: 10%;
+    left: 41rem;
+}
