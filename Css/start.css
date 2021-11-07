@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.start-main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Assets/room3.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.yarn1 {
+    margin-top: -3rem;
+}
+.yarn1-img {
+    width: 3%;
+    margin-left: 40rem;
+    animation-name: rotate;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+   
+    to {
+      transform: rotate(360deg);
+    }
+} 
+.carpet-img {
+    position: absolute;
+    z-index: 0;
+    margin-left: -19rem;
+    height: 96vh;
+    transform:
+        rotateX(65deg)
+        rotateZ(180deg);
+    transform-style: preserve-3d;
+}
+.sofa-img {
+    position: absolute;
+    width: 18%;
+    margin-left: -8rem;
+    margin-top: 3rem;
+    z-index: 1;
+}
+.kitty-img {
+    position: absolute;
+    z-index: 1;
+    width: 9%;
+    top: 17rem;
+    left: 39rem;
+    animation-name: move;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes move {
+    from {
+        transform: rotate(0deg);
+    }
+     
+    to {
+        transform: rotate(13deg);
+    }
+}
+.text {
+    position: absolute;
+    z-index: 100;
+    top: 31rem;
+    font-weight: 600;
+}
+.start {
+    position: absolute;
+    z-index: 100;
+    top: 33.5rem;
+}
+.startbtn {
+    background-color: #ff9100;
+    height: 7vh;
+    width: 9.5vw;
+    font-size: 1.5rem;
+    border: 1px solid #b6b2b2;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.pillowimg, .yarn2img {
+    width: 3.5%;
+    position: absolute;
+    z-index: 50;
+}
+.pillowimg {
+    margin-top: 20%;
+    left: 40%;
+}
+.yarn2img {
+    top: 31rem;
+    right: 33rem;
+}
+audio {
+    width: 0;
+    height: 0;
+}
