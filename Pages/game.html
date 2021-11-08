@@ -57,22 +57,26 @@
         </div>
         <form class="catcount" name="val">
             <div class="btninput">
-                <span class="btn">0</span>
-                <span class="btn">1</span>
-                <span class="btn">2</span>
-                <span class="btn">3</span>
-                <span class="btn">4</span>
-                <span class="btn">5</span>
-                <span class="btn">6</span>
-                <span class="btn">7</span>
-                <span class="btn">8</span>
-                <span class="btn">9</span>
+                <span class="btn" onclick="myFunction(0)">0</span>
+                <span class="btn" onclick="myFunction(1)">1</span>
+                <span class="btn" onclick="myFunction(2)">2</span>
+                <span class="btn" onclick="myFunction(3)">3</span>
+                <span class="btn" onclick="myFunction(4)">4</span>
+                <span class="btn" onclick="myFunction(5)">5</span>
+                <span class="btn" onclick="myFunction(6)">6</span>
+                <span class="btn" onclick="myFunction(7)">7</span>
+                <span class="btn" onclick="myFunction(8)">8</span>
+                <span class="btn" onclick="myFunction(9)">9</span>
             </div>
-            <input class="catcountanswer" id="userInput" type="text" name="txt" readonly="">
-            <button class="enter" id="btn">Enter</button>
+            <input class="catcountanswer" id="value" type="text" name="txt" value="?" readonly="">
+            <button class="enter"  onclick="myResult()">Enter</button>
         </form>
+        <div id="myPopup" class="popup">
+            <img src="../assets/star.svg" />
+            <div>Very Nice</div>
+        </div>
     </div>
-
+    <script src="../Scripts/script.js"></script>
 </body>
 
 </html>

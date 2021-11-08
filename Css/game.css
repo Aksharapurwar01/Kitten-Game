@@ -44,7 +44,8 @@ html, body {
     justify-content: center;
     margin-left: 1rem;
     transform:
-        rotateZ(18deg);
+        rotateZ(18deg); 
+        /* rotate */
 }
 
 .ratinginput {
@@ -102,13 +103,13 @@ audio {
     top: 15.5rem;   
 }
 .cat1{
-    animation-name: catmove1;
+    animation-name: cat1;
     animation-duration: 1500ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-@keyframes catmove1{
+@keyframes cat1{
     from {
         left: 35rem;
     }
@@ -121,13 +122,13 @@ audio {
 .cat2 {
     left: 29.8rem;
     top: 19.8rem;
-    animation-name: catmove2;
+    animation-name: cat2;
     animation-duration: 1500ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-@keyframes catmove2{
+@keyframes cat2{
     from {
         left: 29.8rem;
     }
@@ -139,12 +140,12 @@ audio {
 .cat3 {
     left: 38rem;
     top: 21rem;
-    animation-name: catmove3;
+    animation-name: cat3;
     animation-duration: 1500ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;  
 }
-@keyframes catmove3{
+@keyframes cat3{
     from {
         left: 38rem;
     }
@@ -156,12 +157,12 @@ audio {
 .cat4 {
     left: 32rem;
     top: 25rem;
-    animation-name: catmove4;
+    animation-name: cat4;
     animation-duration: 1500ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-@keyframes catmove4{
+@keyframes cat4{
     from {
         left: 32rem;
     }
@@ -327,43 +328,14 @@ audio {
     background-color: #ff9100;
 }
 
-.win, .loose {
-    width: 12%;
-    position: fixed;
-    left: 40rem;
-    top: 19rem;
-    animation-name: move;
-    animation-duration: 1200ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-}
-@keyframes move {
-    0% {
-        transform: rotate(-25deg);
-    }
-     
-    50% {
-        transform: rotate(0deg);
-    }
 
-    100% {
-        transform: rotate(25deg);
-    }
-}
-.win_text, .loose_text {
-    text-align: center;
-    position: relative;
-    left: 43rem;
-    top: 11.5rem;
-    font-size: 2rem;
-    color: #006400;
-    width: 5%;
-    animation-name: move;
-    animation-duration: 1200ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-}
-.loose_text {
-    width: 10%;
-    left: 41rem;
+.popup {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 40%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    animation: popup 2s infinite;
 }
